@@ -36,8 +36,40 @@ Identifying trends in weather data is essential for proactive decision-making, a
 Comprehensive Understanding:
 A comprehensive understanding of weather data involves integrating various meteorological factors, historical patterns, and real-time information to inform holistic decision-making. This multifaceted approach allows organizations to develop effective strategies that address the complexities of weather variability and its impacts on different sectors.
 
+Dataset Description:
+This dataset includes data on city attributes, humidity, pressure, temperature, weather descriptions, wind direction, and wind speed for various cities.
+
 ER Diagram:
 ![image](https://github.com/user-attachments/assets/3867ae6b-3940-48f0-a2e1-a23a2427db56)
+
+Key Questions Answered:
+Latitude Analysis: Variation in the distribution of cities across countries in terms of Latitude.
+Humidity Analysis: Variation of Humidity across cities.
+Temperature Analysis: Temperature trend over a period of time.
+Weather condition Analysis: Identification of busiest hours for specific weather condition.
+Wind speed Analysis: Change of wind speed over a course of day.
+Wind Direction Analysis: Visualizes prevailing wind direction for specific city.
+Wind speed and Pressure Correlation: Identification of the relationship between wind spedd and pressure for a specific city.
+
+Steps
+Data Import and Cleaning:
+Imported data using the Get Data option in Excel.
+Used Power Query Editor to clean the data, ensuring that each table is properly structured and formatted for analysis.
+
+Data Preparation:
+Loaded six tables: city_attributes, country, city_lookup, final_fact, date_lookup and time_lookup
+Joined the tables based on relevant keys like City_id,Country_id, date_id and time_id
+
+Dynamic Dashboard:
+Created multiple dynamic charts to visualize weather factors.
+Added slicers for easy filtering by cities,weather conditons etc.
+
+Visuals:
+Used different types of charts (Bar, Line, Radial and Rose) to visualize:
+Temperature trends.
+Correlation between wind speed and pressure.
+Variation of Humidity and Wind speed across cities and time.
+Busiest hours of Weather condition.
 
 Conclusion:
 Based on the analysis, the climatic factors remain largely unaffected by latitude variations, and no significant correlations explain the clustering of cities with similar geographic coordinates. Cities exhibit stable temperatures over time without unusual deviations linked to specific events. However, wind speed and direction are identified as key influencers of severe weather conditions, although no extreme weather events were observed in the provided data. In conclusion, the data suggests overall climatic stability with wind dynamics being a crucial factor in weather severity.
